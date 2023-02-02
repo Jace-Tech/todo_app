@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  padding: 2rem;
+  border-top: 5px solid #666;
+}
+
+.container {
+  max-width: 768px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+form {
+  display: block;
+  width: 100%;
+}
+
+.input-group {
+  display: flex;
+}
+
+.form-control {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  border: 1px solid #ccc;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-right: none;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: rgb(11, 161, 248);
+}
+
+.form-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  border: none;
+  background-color: rgb(11, 161, 248);
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.card-container {
+  margin-top: 4rem;
+}
+
+.task-card {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 4px; 
+  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1rem;
+}
+
+.task-row {
+  display: flex;
+  align-items: center;
+}
+
+.edit-input {
+  flex: 1;
+  padding: .8rem 1rem;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.options {
+  display: flex;
+  gap: 1rem;
+  margin-left: 1rem;
+}
+
+.option-btn {
+  background: transparent;
+  border: none;
+  font-weight: 600;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.option-btn.blue {
+  color: rgb(11, 161, 248);
+}
+
+.option-btn.red {
+  color: rgb(249, 50, 50);
+}
+
+.option-btn.green {
+  color: rgb(14, 169, 86);
+}
+
+.task-row.edit {
+  display: none;
+}
+
+.task-card.editing .task-row.edit {
+  display: flex;
+}
+
+.task-card.editing .task-row.preview {
+  display: none;
+}
+
+.text {
+  flex: 1;
+  color: #333;
+  font-size: .9rem;
+  padding: .8rem 1rem;
+}
